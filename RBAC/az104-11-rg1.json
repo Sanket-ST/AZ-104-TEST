@@ -1,0 +1,19 @@
+{
+    "Name":  "Spektra Custom RBAC",
+    "Id":  null,
+    "IsCustom":  true,
+    "Description":  "Spektra Training Custom Role.",
+    "Actions":  [
+                    "Microsoft.Authorization/*/read",
+                    "Microsoft.Automation/automationAccounts/*",
+                    "Microsoft.Automation/automationAccounts/runbooks/*",
+                    "microsoft.insights/actiongroups/*",
+                    "Microsoft.OperationalInsights/workspaces/*",
+                    "Microsoft.OperationsManagement/solutions/*",
+                    "Microsoft.Resources/deployments/*",
+                    "Microsoft.Resources/subscriptions/resourceGroups/read"
+                ],
+    "NotActions":  [
+
+                   ]
+}
