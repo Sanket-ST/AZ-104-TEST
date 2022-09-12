@@ -1,0 +1,40 @@
+{
+	 "if": {
+	    "anyOf": [
+		 {
+			"not": {
+			  "anyOf": [
+                    {
+				    "field": "type",
+				    "like": "Microsoft.Automation/automationAccounts/*"
+				    },
+                    {
+				    "field": "type",
+				    "like": "Microsoft.Automation/automationAccounts/runbooks/*"
+				    },
+                    {
+				    "field": "type",
+				    "like": "microsoft.insights/actiongroups/*"
+				    },
+                    {
+				    "field": "type",
+				    "like": "Microsoft.OperationalInsights/workspaces/*"
+				    },
+                    {
+				    "field": "type",
+				    "like": "Microsoft.OperationsManagement/solutions/*"
+				    },
+                    {
+				    "field": "type",
+				    "in": ["Microsoft.Automation/automationAccounts", "Microsoft.Automation/automationAccounts/runbooks", "microsoft.insights/actiongroups", "Microsoft.OperationalInsights/workspaces", "Microsoft.OperationsManagement/solutions"]
+				    }
+                ]
+			}
+		 },
+
+	  ]
+	},
+	"then": {
+	  "effect": "deny"
+	}
+}
