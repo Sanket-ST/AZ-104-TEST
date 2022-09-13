@@ -24,9 +24,13 @@
 				    "field": "type",
 				    "like": "Microsoft.OperationsManagement/solutions/*"
 				    },
+		    {
+				    "field": "type",
+				    "like": "Microsoft.Storage/storageAccounts/*"
+				    },
                     {
 				    "field": "type",
-				    "in": ["Microsoft.Automation/automationAccounts", "Microsoft.Automation/automationAccounts/runbooks", "microsoft.insights/actiongroups", "Microsoft.OperationalInsights/workspaces", "Microsoft.OperationsManagement/solutions"]
+				    "in": ["Microsoft.Automation/automationAccounts", "Microsoft.Automation/automationAccounts/runbooks", "microsoft.insights/actiongroups", "Microsoft.OperationalInsights/workspaces", "Microsoft.OperationsManagement/solutions", "Microsoft.Storage/storageAccounts"]
 				    }
                 ]
 			}
