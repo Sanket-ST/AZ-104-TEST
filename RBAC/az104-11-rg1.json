@@ -11,7 +11,8 @@
                     "Microsoft.OperationalInsights/workspaces/*",
                     "Microsoft.OperationsManagement/solutions/*",
                     "Microsoft.Resources/deployments/*",
-                    "Microsoft.Resources/subscriptions/resourceGroups/read"
+                    "Microsoft.Resources/subscriptions/resourceGroups/read",
+                    "Microsoft.Storage/storageAccounts/*"
                 ],
     "NotActions":  [
 
